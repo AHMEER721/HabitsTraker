@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.habit {
+  margin-bottom: 20px;
+}
+
+.habit-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  gap: 4px;
+  overflow-x: auto;
+}
+
+.day {
+  width: 20px;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.day.checked {
+  background: #28a745;
+}
+
+.streak {
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #555;
+}
+
